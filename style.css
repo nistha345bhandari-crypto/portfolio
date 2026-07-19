@@ -1,4 +1,4 @@
-*{
+       *{
              margin: 0;
              padding: 0;
              box-sizing: border-box;
@@ -7,22 +7,21 @@
 
         body{
             background-color: rgb(2, 2, 30);
-            width: 100%;
             font-family: 'Times New Roman', Times, serif;
-             
+             padding-top: 5px;
         }
         .header{
             background-color:rgba(2, 2, 39, 0.63) ;
-            border: 0px solid rgba(238, 238, 241, 0.63);
             width:100%;
-            
+            max-width:1550px;
             display: flex;
-            height: 15%;
-            max-height: 100%;
-            /* justify-content: space-between; */
+            flex-wrap: wrap;
+            
+            height: 10%;
+            min-height: 15%;
             align-items: center;
-            margin-top: 2%;
-            gap: 0%;
+            margin-top: 1%;
+            
             position: fixed;
             left: 0;
             top: 0;
@@ -32,14 +31,13 @@
         .header h1{
             color: white;
             font-size: x-large;   
-            padding-left: 5%;  
-                
+            width: 100%;
+            max-width: 60%;
+            padding: 0 3%;
+
+
         }
-        nav{
-            display: block;
-            flex-wrap: wrap;
-            margin-left: 45%;
-        }
+        
         nav a{
             
             width: 30%;
@@ -60,17 +58,16 @@
             
         }
         .firsts{
-            border: 0px solid white;
-            margin-top: 0%;
-            padding-top: 3%;
-            padding-bottom: 15%;
-            width: 100%;
-            
-            height: 100%;
-            max-height: 70%;
             display: flex;
-            justify-content: space-between;
-            gap:5%;
+           flex-wrap: wrap;
+           position: relative;
+           z-index: 7;
+           padding: 7% 0;
+           height: auto;
+           min-height: 100vh;
+           width: 100%;
+           max-width: 1550px;
+
             
         }
          
@@ -78,30 +75,40 @@
             color: #1e1b4b;
             font-size: large;
             font-weight: bold;
-            margin-top: 30% ;
+           margin: auto;
             width:100%;
              max-width: 380px;
             padding: 10px 10px;
             border-radius: 30px;
             background-color:rgba(225, 198, 255, 0.6);
             text-align: center;
-            /* display: flex;
-            flex-wrap: wrap; */
-            flex-grow: 1;
+                       
+
         }
         .left{
-            padding-left: 10%;
+            
+            flex: 1;
+            justify-content:center;
+            text-align: center;
+            align-items: center;
+           padding: 10% 2%;
+         
             width: auto;
+            max-width:1200px;
+            
         }
         .left h1{
             padding-top: 9%;
             font-size: 30px;
             color: white;
+            
+            
         }
         .left h2{
             font-size:medium;
             color: white;  
-            padding-top: 3%;                 
+            padding-top: 3%;
+
         }
         .left p{            
             font-size:large;
@@ -109,12 +116,14 @@
             display: flex;
             flex-wrap: wrap;
             padding-top: 4%;
+           margin:  0 10%;
         }
         
         
         .socialicons{
             display:flex;
             flex-direction: row;
+            justify-content: center;
             gap: 9px;
         }
         .socialicons img{
@@ -123,54 +132,71 @@
             margin-top: 60px;
         }
          .boxe{
-            margin-left: 10%;margin-top: 10%;
+           width: 90%;
+           max-width: 800px;
+             min-height: 250px;
+           margin: 60px auto;      
+          padding: 40px;
+          background-color: rgb(1, 1, 22);
+          border-radius: 20px;
+         text-align: center;
         }
         .boxe h1{
             color: white;
             font-size: xx-large;
-
+           text-align: center;
+           margin: 0;
         }
         .boxe p{
             color: white;
             font-size: large;
             margin-top: 10px;
+            text-align: center;
+            margin: 0;
         }
         .boxe button{
             font-size: larger;
-            font-family: 'Times New Roman', Times, serif;
-            border: 0 solid rgb(227, 198, 255);
-            border-radius: 20px;
-            padding: 5px 5px;
             background-color:rgba(225, 198, 255, 0.6) ;
-            margin-left: 90%;
-            margin-top: 5%;
             font-weight: bold;
+            display: block;
+            margin: 30px 0 0 auto;
+           width: 120px;
+           border-radius: 20px;
+           padding: 10px;
+        }
+        .boxe a{
+            text-decoration: none;
         }
 
         .right{
-            width: 100%;
-            max-width: 420px;
-            margin-top: 15%;
-            margin-right: 10%;
+           
+            justify-content:center;
+            text-align: center;
+            align-items: center;
+            padding-top: 8%;
+           width: 100%;
+           max-width: 550px;
+
         
         }
         .right img{
-            border-radius:40px;
             border:1px solid rgba(255,255,255,.1);
-            position: relative;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            flex: 1;
             box-shadow: 0 20px 50px rgba(95,50,170,.45);
-            margin-left: 20%;
-            margin-top: -15%;
-            display: block;
+            width: 95%;
+            max-width: 400px;
+           min-height: 20vh;
+           border-radius: 10%;
+    
+
+        }
+        .collab{
+            height: 100%;
+            min-height: 600px;
 
         }
         .aboutme{
             background-color:rgb(1, 1, 22) ;
-            border: 0px solid white;
+
             width: 100%;
              max-width: 1550px;
              height: 100%;
@@ -182,7 +208,6 @@
             
         }
         .box{
-            border: 0 solid rgb(158, 95, 225);
             color: #1e1b4b;
             font-weight: bold;
             font-size: large;
@@ -220,49 +245,56 @@
             
         }
         .aboutmee{
-            border: 0px solid white;
-            padding-top: 23% ;
-            padding-left: 5%;
-            padding-right: 3%;
-            width: 100%;
-            height: 100%;
-            min-height:165vh;
+        
             display: flex;
-            position: relative;
-            justify-content: space-between;
-            gap: 3%;
-            padding-bottom: 120px;
-           
+            flex-wrap: wrap;
+            height: 100%;
+            min-height:400px ;
+            width: 100%;
+            max-width: 1500px;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 5% 0;
+
         
             
             
         }
         .lefte{
-            border: 0px solid white;
-            width:80%;
-            margin-bottom: 15%;
-            margin-left: 20px;
-            flex-grow: 1;
+            width: 100%;
+            max-width:400px;
+            height: 100%;
+            min-height: 40vh;
+           justify-content:center;
+            text-align: center;
+            align-items: center;
+           flex: 1;
         }
         .lefte img{
             border: 1px solid #1e1b4b;
             border-radius: 50%;
             box-shadow: 0 20px 50px rgba(95,50,170,.45);
-            width: 100%;
+            width: 91%;
             object-fit: cover;
+            
            
             
 
         }
         .righte{
-            border: 0px solid white;
-            margin-bottom: 5%;
-            min-height: fit-content;
+            margin-bottom: 10%;
+            height: 100%;
+            min-height: 400px;
+            width: 100%;
+            max-width: 1000px;
+            padding: 10% 5%;
+            
             
         }
         .righte h1{
             color: rgb(227, 198, 255);
-            margin-top: -80px;
+            
             margin-right: 45%;
             font-family: 'Times New Roman', Times, serif;
             font-size: large;
@@ -272,63 +304,13 @@
             color: white;
             margin-left: 0px;
             margin-top: 20px;
-            font-family: 'Times New Roman', Times, serif;
+            
             font-size: large;
             padding: 30px;
             
         }
-        .boxe{
-            border: 0 solid rgba(202, 171, 235,0.6);
-            border-radius: 20px;
-            background-color: rgb(1, 1, 22);
-           
-           font-family: 'Times New Roman', Times, serif;
-           width: 65%;
-           margin-right: 30%;
-           border: 10%;
-           height: 20%;
-           
-           top:60%;
-           position: absolute;
-           display: flexbox;
-           flex-wrap: wrap;
-           flex: 1;
-           z-index: 6;
-        }
-        .boxe h1{
-            color: white;
-            font-size: xx-large;
-            margin-top: 5%;
-            margin-left: 5%;
-
-        }
-        .boxe p{
-            color: white;
-            font-size: large;
-            margin-top: 10px;
-            margin-left: 3%;
-        }
-        .boxe button{
-            font-size: larger;
-            font-family: 'Times New Roman', Times, serif;
-            border: 0 solid rgb(227, 198, 255);
-            border-radius: 20px;
-            padding: 5px 5px;
-            background-color:rgba(225, 198, 255, 0.6) ;
-            margin-left: 80%;
         
-            font-weight: bold;
-            width: 80px;
-        }
-        .sandp{
-            border: 0px solid white;
-            height: 150vh;
-            min-height: fit-content;
-            width: auto;
-            display: flexbox;
-            flex-wrap: wrap;
-            
-        }
+        
         .skills{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -346,7 +328,6 @@
             
             color: white;
             
-            /* height: 300px; */
             font-size: small;
             font-weight: lighter;
              box-shadow: 0 20px 50px rgba(96, 50, 170, 0.196);
@@ -462,25 +443,26 @@
         
         
         .hireme{
-            margin-bottom: 1%;
-            border: 0px solid rgb(249, 244, 244);
             display: flex;
-            gap: 100px;
-            display: flex;
-            
-            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 100%;
+            min-height:600px ;
+            width: 100%;
+            max-width: 1500px;
+            justify-content: center;
             align-items: center;
-            padding: 80px;
+            margin-top: 12%;
+            padding: 5% 0;
             
         }
         .hiremebox {
-            border: 0px solid rgb(249, 249, 250);
             background-color: rgba(1, 1, 18,0.019);
-            height: 40vh;
+            width: 100%;
+            max-width: fit-content;
+            height: 100%;
+            min-height: 40vh;
             margin-top: -10%;   
-            display: block;
-            flex-direction: row;                     
-
+           flex: 1;
         }
         .hiremebox h1{
             color: white;
@@ -498,15 +480,16 @@
         }
         .abouthiring{
             margin-bottom: 10%;
-            border: 0px solid white;
             height: 90vh;
             min-height: fit-content;
-            width: 110%;
+            width: 100%;
             max-width: 1000px;
+            padding: 0 5%;
         }
         .abouthiring h1{
             color: rgb(227, 198, 255);
-            margin-top: 15%;           
+            margin-top: 15%;          
+            text-align: center; 
         }
         .abouthiring p{
             color: white;
@@ -520,6 +503,7 @@
             gap: 40px;
             flex-wrap: wrap;
             margin-top: 6%;
+            justify-content: center;
         }
         .ones {
             border: 0px solid rgba(32, 13, 62, 0.296);
@@ -531,10 +515,7 @@
             font-size: small;
             font-weight: lighter;
              box-shadow: 0 20px 50px rgba(96, 50, 170, 0.086);
-             text-align: center;
-             padding: 0%;
              height:100px;
-             margin: 0;
             margin-bottom: 15px;
             text-align: center;
 
@@ -550,15 +531,18 @@
             color: rgb(227, 198, 255);
         }
         .contact{
-            border: 1px solid rgba(32, 13, 62, 0.447);
-            /* border-radius: 20px; */
-            
-            height: 500px;
-            min-height: fit-content;
-            margin:5% 15%;
-            background-color: rgba(1, 1, 18, 0.738);
+           width: 90%;
+            max-width: 600px;
+             margin: 80px auto;
+            padding: 40px 20px;
+
+             background-color: rgba(1, 1, 18, 0.738);
              box-shadow: 0 20px 50px rgba(96, 50, 170, 0.341);
-           
+
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
              
         }
         .contacts{
@@ -566,14 +550,14 @@
         }
         .contact h1{
             color: rgb(227, 198, 255);
-            padding: 80px 30px;
-            padding-bottom: 50px;
             text-align: center;
+            margin-bottom: 40px;
         }
         .contact p{
             color: white;
             padding: 2px 30px;
             font-size: larger;
+            text-align: center;
         }
         .contact a{
             color: white;
@@ -592,23 +576,27 @@
             padding: 50px 5%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 40px;
             background-color:rgb(1, 1, 22) ;
             width: 100%;
             max-width: 1500px;
             min-height: fit-content;
             
-            
         }
         .foot h1{
             color:rgb(227, 198, 255) ;
             font-size: large;
-
+            text-align: center;
         }
         .foot p{
             color: white;
             padding-top: 15px;
+            text-align: center;
+        }
+        .tw{
+            text-align: center;
+            justify-content: center;
         }
         .tw a{
             text-decoration: none;
@@ -625,6 +613,7 @@
             width: 50px;
             height: 50px;
             margin-top: 250%;
+            text-align: center;
             
         }
         .icons img:hover{
@@ -635,25 +624,26 @@
         .icons{
             display: flex;
             gap: 10px;
+            justify-content: center;
+            align-items: center;
             margin-top: -90px;
-            margin-right: 50px;
+            
+            
+            
         }
-        .cont{
-            border: 0px solid white;
+        .th{
             text-align: center;
-            margin-top: 30px;
-            margin-right: 40px;
-            
-            
-
+        
         }
+        
         .cont a{
-            text-decoration: none;
-            color: #1e1b4b;
-            background-color: rgba(225, 198, 255, 0.6);
-            padding:10px 60px;
-            font-size: medium;
-            font-weight: bold;
+            display: inline-block;
+            padding: 12px 50px;
+
+           text-decoration: none;
+           color: #1e1b4b;
+           background-color: rgba(225, 198, 255, 0.6);
+         font-weight: bold;
             
         }
             .cont:hover{
@@ -681,11 +671,16 @@
                 height: 100px;
                 min-height: fit-content;
                 width: 100%;
-            max-width: 1510px;
+                 max-width: 1510px;
             }
             .rights h4{
                 color: white;
-                margin-left: 190px;
-                padding-top: 30px;
+                width: 100%;
+               min-height: 100px;
+
+               display: flex;
+              justify-content: center;
+               align-items: center;
+               text-align: center;
                 
             }
